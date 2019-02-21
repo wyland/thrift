@@ -2173,6 +2173,7 @@ void t_swift_generator::generate_swift_service_client_async_implementation(ostre
     out << indent() << "if let error = error";
     block_open(out);
     out << indent() << error_completion_call << endl;
+    out << indent() << "return" << endl;
     block_close(out);
 
     if (!is_oneway) {
