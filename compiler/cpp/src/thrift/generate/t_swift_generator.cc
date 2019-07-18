@@ -1475,9 +1475,8 @@ void t_swift_generator::generate_swift_struct_printable_extension(ostream& out, 
       }
       out << "\"" << endl;
     }
-    indent(out) << "desc += \")\"" << endl;
   }
-
+  indent(out) << "desc += \")\"" << endl;
   indent(out) << "return desc" << endl;
   block_close(out);
   out << endl;
